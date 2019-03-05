@@ -1,6 +1,8 @@
 # Dependency directories
 node_modules/
 jspm_packages/
+nodemon.json
+package-lock.json
 
 # Optional npm cache directory
 .npm
