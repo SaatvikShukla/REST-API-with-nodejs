@@ -8,8 +8,13 @@ router.get('/', (req, res, next) => {
 })
 
 router.post('/', (req, res, next) => {
+    const order = {
+        productId : req.body.productId,
+        quantiy: req.body.quantity
+    };
     res.status(201).json({
-        message: 'Orders were updated '
+        message: 'Orders were updated ',
+        orders: order
     });
 })
 
